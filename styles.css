@@ -1,0 +1,1386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR CSS SECTION */
+
+.navbar {
+    background-color: #F7C04A;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo {
+    background-color: #9f9f9f;
+    background-image: linear-gradient(to top, #9f9f9f 0%, #131313 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.2rem;
+}
+
+#navbar_logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar_item {
+    height: 80px;
+}
+
+.navbar_links {
+    color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 30px;
+    height: 100%;
+}
+
+.navbar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #131313;
+}
+
+.button:hover {
+    background-color: #131313;
+    color: #f9f54b;
+    transition: all 0.3s ease;
+    transform: scale(1.1.);
+}
+
+.navbar_links:hover {
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* NAVBAR RESPONSIVENESS SECTION */
+
+@media screen and (max-width: 960px) {
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 100vh;
+        z-index: 1;
+        background-color: #141414;
+    }
+
+    .navbar_menu.active {
+        background-color: #141414;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 90vh;
+        font-size: 1.2rem;
+    }
+
+    #navbar_logo {
+        padding-left: 25px;
+    }
+
+    .navbar_toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+    }
+
+    .navbar_item {
+        width: 100%;
+    }
+
+    .navbar_links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        color: #F7C04A;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .button:hover {
+        background-color: #F7C04A;
+        color: #fff;
+    }
+
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* HERO SECTION */ 
+
+.main {
+    background-color: #141414;
+}
+
+.main_content h1 {
+    font-size: 3rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #FBFFB1 0%, #F7C04A 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-left: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+.main_content h2 {
+    font-size: 2.5rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #FBFFB1 0%, #F7C04A 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-left: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+.main_content p {
+    font-size: 2rem;
+    color: #c0c0c0;
+    font-weight: 500;
+    margin-left: -3rem;
+    padding-left: 110px;
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 90px 50px;
+}
+
+.main_img_container #main_img {
+    height: 70%;
+    width: 70%;
+    margin: 15px auto;
+    padding: auto;
+}
+
+/* HERO SECTION RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+    .main_content h1 {
+        font-size: 2.5rem;
+        padding-left: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_content h2 {
+        font-size: 2.2rem;
+        padding-left: 40px;
+    }    
+
+    .main_container {
+        display: block;
+        align-items: center;
+        justify-self: center;
+        height: 100%;
+    }
+
+    .main_content p {
+        font-size: 1.8rem;
+        color: #c0c0c0;
+        font-weight: 500;
+        padding-left: 100px;
+    }
+
+    .main_img_container #main_img {
+    height: 80%;
+    width: 80%;
+    margin: 35px;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_content h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .main_content h2 {
+        font-size: 1.8rem;
+    }
+
+    .main_content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        padding-left: 135px;
+    }
+}
+
+/* CAREER HIGHLIGHTS SECTION CSS */
+
+.highlights {
+    background-color: #141414;
+    padding: 0 175px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.highlights h1 {
+    color: #C0C0C0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.highlights p {
+    display: block;
+    background-color: black;
+    color: #c0c0c0;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.highlights span {
+    font-size: 1.5rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #FBFFB1 0%, #F7C04A 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* CAREER HIGHLIGHTS MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+    .highlights {
+        background-color: #141414;
+        padding: 50px 20px;
+    }
+
+    .highlights h1 {
+        font-size: 2.5rem;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center;
+        padding-left: 35px;
+    }
+
+    .highlights p {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 50px;
+        font-size: 1.5rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .highlights span {
+        font-size: 1.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .highlights h1 {
+        font-size: 2rem;
+    }
+
+    .highlights p {
+        font-size: 1.2rem;
+    }
+
+    .highlights span {
+        font-size: 1.3rem;
+    }
+}
+
+/* WORK EXPERIENCE SECTION CSS */
+
+.experience {
+    background-color: #141414;
+    padding: 20px 0;
+}
+.experience h1 {
+    padding: 50px 0;
+    color: #C0C0C0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.experience_container {
+    background-color: #141414;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px 40px;
+}
+
+.citadel_container {
+    padding: 0 50px;
+}
+
+.citadel_container h1 {
+    font-size: 2.5rem;
+    display: grid;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: left;
+    justify-content: left;
+    padding: 0;
+    font-style: italic;
+}
+
+.citadel_container h2 {
+    font-size: 2rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: bold;
+}
+
+.citadel_container h3,.citadel_container h4 {
+    font-size: 1.5rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: bold;
+}
+
+.citadel_container p {
+    font-size: 1rem;
+    color: #fff;
+    list-style-type: none;
+    padding: 20px 0;
+}
+
+.accenture_container {
+    padding: 0 50px;
+}
+
+.accenture_container {
+    padding: 0 50px;
+}
+
+.accenture_container h1 {
+    font-size: 2.5rem;
+    display: grid;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: left;
+    justify-content: left;
+    padding: 0;
+    font-style: italic;
+}
+
+.accenture_container h2 {
+    font-size: 2rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: bold;
+}
+
+.accenture_container h3, .accenture_container h4 {
+    font-size: 1.5rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: bold;
+}
+
+.accenture_container p {
+    font-size: 1rem;
+    color: #fff;
+    list-style-type: none;
+    padding: 20px 0;
+}
+
+.internship_container {
+    padding: 0 50px;
+}
+
+.internship_container h1 {
+    font-size: 2.5rem;
+    display: grid;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: left;
+    justify-content: left;
+    padding: 0;
+    font-style: italic;
+}
+
+.internship_container h2 {
+    font-size: 2rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: bold;
+}
+
+.internship_container h3, .internship_container h4 {
+    font-size: 1.5rem;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: bold;
+}
+
+.internship_container p {
+    font-size: 1rem;
+    color: #fff;
+    list-style-type: none;
+    padding: 20px 0;
+}
+
+/* WORK EXPERIENCE RESPONSIVE SECTION */
+
+@media screen and (max-width: 768px) {
+
+    .experience h1 {
+        font-size: 2.5rem;
+    }
+
+    .experience_container {
+        background-color: #141414;
+        display: inline-block;
+        height: 100%;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .citadel_container {
+        padding: 0 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .citadel_container h1 {
+        font-size: 2rem;
+    }
+
+    .citadel_container h2 {
+        font-size: 1.8rem;
+    }
+
+    .citadel_container h3, .citadel_container h4 {
+        font-size: 1.5rem;
+    }
+
+    .citadel_container p {
+        font-size: 1rem;
+    }   
+    
+    .accenture_container {
+        padding: 20px 50px;
+    }
+    .accenture_container h1 {
+        font-size: 2rem;
+    }
+
+    .accenture_container h2 {
+        font-size: 1.8rem;
+    }
+
+    .accenture_container h3, .accenture_container h4 {
+        font-size: 1.5rem;
+    }
+
+    .accenture_container p {
+        font: 1rem;
+    }
+
+    .internship_container {
+        padding: 20px 50px;
+    }
+    .internship_container h1 {
+        font-size: 2rem;
+    }
+
+    .internship_container h2 {
+        font-size: 1.8rem;
+    }
+
+    .internship_container h3, .internship_container h4 {
+        font-size: 1.5rem;
+    }
+
+    .internship_container p {
+        font: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .experience h1 {
+        font-size: 2rem;
+    }
+
+    .citadel_container h1 {
+        font-size: 1.5rem;
+    }
+
+    .citadel_container h2 {
+        font-size: 1.2rem;
+    }
+
+    .citadel_container h3, .citadel_container h4 {
+        font-size: 1rem;
+    }
+
+    .citadel_container p {
+        font: 0.8rem;
+    }
+
+    .accenture_container h1 {
+        font-size: 1.5rem;
+    }
+
+    .accenture_container h2 {
+        font-size: 1.2rem;
+    }
+
+    .accenture_container h3, .accenture_container h4 {
+        font-size: 1rem;
+    }
+
+    .accenture_container p {
+        font-size: 0.8rem;
+    }
+
+    .internship_container h1 {
+        font-size: 1.5rem;
+    }
+
+    .internship_container h2 {
+        font-size: 1.2rem;
+    }
+
+    .internship_container h3, .internship_container h4 {
+        font-size: 1rem;
+    }
+
+    .internship_container p {
+        font-size: 0.8rem;
+    }
+
+}   
+
+/* TECHNICAL SKILLS SECTION CSS */
+
+.skills {
+    background-color: #141414;
+}
+
+.skills_container h1 {
+    color: #C0C0C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.row.row-cols-1.row-cols-md-3.g-4 {
+    padding: 20px 30px 20px 50px;
+    width: 100%;
+}
+
+.card.h-100 {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.card.h-100:hover {
+    border: 1px solid #f9f54b;
+}
+
+.card-body {
+    background-color: #141414;
+    border: 1px solid white;
+}
+
+.card-body:hover {
+    background-color: #141414;
+    border: 1px solid #f9f54b;
+    cursor: pointer;
+}
+
+.card-title {
+    color: #9f9f9f;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.card-text {
+    color: #f7c04a;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    justify-content: center;
+}
+
+/* TECHNICAL SKILLS RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+    .skills {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+    }
+
+    .skills_container h1 {
+        font-size: 2.5rem;
+    }
+
+    .row.row-cols-1.row-cols-md-3.g-4 {
+        padding: 20px 30px 20px 50px;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills_container h1 {
+        font-size: 2rem;
+    }
+
+    .row.row-cols-1.row-cols-md-3.g-4 {
+        padding: 20px 30px 20px 50px;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* BACKGROUND EDUCATION CSS SECTION */
+
+.education {
+    background-color: #141414;
+    padding: 40px 0;
+}
+
+.education h1 {
+    padding: 50px 0;
+    color: #C0C0C0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding-bottom: 50px;
+}
+
+.logo_container {
+    display: flex;
+    flex: 33.33%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.logo_container p {
+    color: #f7c04a;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.school_logo {
+    width: 33.33%;
+    padding: 30px 0px 30px 80px
+}
+
+#school {
+    width: 250px;
+    height: 250px;
+}
+
+.org_logo {
+    width: 33.33%;
+    padding: 30px;
+}
+
+#organization {
+    width: 375px;
+    height: 140px;
+}
+
+.grad_pic_logo {
+    width: 33.33%;
+    padding: 30px 80px 30px 0px
+}
+
+#graduation_picture {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.logo_container p {
+    font-style: italic;
+}
+
+/* EDUCATIONAL BACKGROUND RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+    .education {
+        background-color: #141414;
+    }
+
+    .education h1 {
+        display: grid;
+        font-size: 2.2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-weight: bolder;
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 13px;
+    }
+
+    .logo_container {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .logo_container p {
+        text-align: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .school_logo {
+        width: 100%;
+        padding: 50px;
+    }
+    
+    #school {
+       width: 200px;
+       height: 200px;
+    }
+    
+    .org_logo {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    #organization {
+        width: 350px;
+        height: 120px;
+    }
+    
+    .grad_pic_logo {
+        width: 100%;
+        padding: 55px;
+    }
+    
+    #graduation_picture {
+        width: 200px;
+        height: 200px;
+    }  
+}
+
+@media screen and (max-width: 480px) {
+    .education h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo_container p {
+        text-align: center;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    .org_logo {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* TRAINING AND CERTIFICATIONS CSS SECTION*/
+
+.trainings {
+    background-color: #141414;
+}
+
+.trainings h1 {
+    font-size: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #C0C0C0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.trainings_container {
+    display: flex;
+    overflow-x:scroll;
+    padding: 24px;
+    width: 300px;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+    margin: auto;
+    background-color: #141414;
+}
+
+.trainings_container .item {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    border: 3px solid #f9f54b;
+    background-color: #141414;
+}
+
+#webdev {
+    background-color: #03045e;
+    border: 2px solid #03045e;
+    cursor: pointer;
+}
+
+#webdev:hover {
+    border: 3px solid #fff;
+}
+
+#webdev h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-style: bold;
+}
+
+#webdev p {
+    color: #fff;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+#sql {
+    background-color: #fff;
+    border: 2px solid #141414;
+    cursor: pointer;
+}
+
+#sql:hover {
+    border: 3px solid #c030ed ;
+}
+
+#sql h2 {
+    font-size: 1.2rem;
+    color: #c030ed;
+    font-style: bold;
+}
+
+#sql p {
+    color: #c030ed;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+#azdev {
+    background-color: #7b7b7b;
+    border: 2px solid #7b7b7b;
+    cursor: pointer;
+}
+
+#azdev:hover {
+    border: 3px solid #d0ba98;
+}
+
+#azdev h2 {
+    font-size: 1.2rem;
+    color: #d0ba98;
+    font-style: bold;
+}
+
+#azdev p {
+    color: #d0ba98;
+    padding: 5px;
+    font-style: italic;
+    display: block;
+
+}
+
+#cad {
+    background-color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#cad:hover {
+    border: 3px solid #00f9ff;
+}
+
+#cad h2 {
+    font-size: 1.2rem;
+    color: #00f9ff;
+    font-style: bold;
+}
+
+#cad p {
+    color: #00f9ff;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+#comptech {
+    background-color: #f0fff3;
+    border: 2px solid #f0fff3;
+    cursor: pointer;
+}
+
+#comptech:hover {
+    border: 3px solid #fa4659;
+}
+
+#comptech h2 {
+    font-size: 1.2rem;
+    color: #fa4659;
+    font-weight: bold;
+}
+
+#comptech p {
+    color: #fa4659;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+#iot {
+    background-color: #2c599d;
+    border: 2px solid #2c599d;
+    cursor: pointer;
+}
+
+#iot:hover {
+    border: 3px solid #fb9b50;
+}
+
+#iot h2 {
+    font-size: 1.2rem;
+    color: #fb9b50;
+    font-style: bold;
+}
+
+#iot p {
+    color: #fb9b50;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+#netsec {
+    background-color: #e2d784;
+    border: 2px solid #e2d784;
+    cursor: pointer;
+}
+
+#netsec:hover {
+    border: 3px solid #05595b;
+}
+
+#netsec h2 {
+    font-size: 1.2rem;
+    color: #05595b;
+    font-style: bold;
+}
+
+#netsec p {
+    color: #05595b;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+#cysec {
+    background-color: #40514e;
+    border: 2px solid #40514e;
+    cursor: pointer;
+}
+
+#cysec:hover {
+    border: 3px solid #2f89fc;
+}
+
+#cysec h2 {
+    font-size: 1.2rem;
+    color: #2f89fc;
+    font-style: bold;
+}
+
+#cysec p {
+    color: #2f89fc;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+#ai {
+    background-color: #f66;
+    border: 2px solid #f66;
+    cursor: pointer;
+}
+
+#ai:hover {
+    border: 3px solid #cebc96;
+}
+
+#ai h2 {
+    font-size: 1.2rem;
+    color: #cebc96;
+    font-style: bold;
+}  
+
+#ai p {
+    color: #cebc96;
+    padding-top: 8px;
+    font-style: italic;
+    display: block;
+}
+
+
+/* Trainings Responsiveness Section */
+
+@media screen and (max-width: 768px) {
+    .trainings {
+        width: 100%;
+    }
+
+    .trainings h1 {
+        font-size: 2rem;
+        display: grid;
+    }
+
+    .item h2 {
+        font-size: 0.9rem;
+    }
+
+    .item p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .trainings h1 {
+        font-size: 1.5rem;
+        display: grid;
+    }
+
+    .item h2 {
+        font-size: 0.8rem;
+    }
+
+    .item p {
+        font-size: 0.7rem;
+    }
+}
+
+/* PERSONAL INFORMATION SECTION */
+
+.about {
+    background-color: #141414;
+    width: 100%;
+}
+
+.about_container {
+    padding: 20px 50px;
+}
+
+.about_container p {
+    color: #c0c0c0;
+}
+
+.about h1 {
+    font-size: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #C0C0C0;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.greeting h2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #F7C04A;
+}
+
+.greeting p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c0c0c0;
+}
+
+.greeting span {
+    color: #F7C04A;
+}
+
+.row {
+    padding-top: 50px;
+    width: 100%;
+    display: grid;
+    
+}
+
+#details {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.column h3 {
+    color: #c0c0c0;
+}
+
+#head_info span {
+    color: #F7C04A;
+}
+
+.column li {
+    list-style-type: none;
+    display: grid;
+    align-items: left;
+    justify-content: left;
+    color: #C0C0C0;
+    font-size: 1rem;
+}
+
+.column #info span {
+    color: #F7C04A;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#bio {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#bio h4 {
+    color: #c0c0c0;
+    font-size: 2rem;
+    align-items: start;
+}
+
+
+
+
+
+

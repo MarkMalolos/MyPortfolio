@@ -5,6 +5,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* NAVBAR CSS SECTION */
 
 .navbar {
@@ -49,7 +53,7 @@
     transform: scale(1.1);
 }
 
-.navbar_menu {
+#navbarMenu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +123,7 @@
         padding: 0;
     }
 
-    .navbar_menu {
+    #navbarMenu {
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
@@ -135,7 +139,7 @@
         background-color: #141414;
     }
 
-    .navbar_menu.active {
+    #navbarMenu.active {
         background-color: #141414;
         top: 100%;
         opacity: 1;
@@ -169,7 +173,7 @@
         color: #F7C04A;
     }
 
-    #mobile-menu {
+    #mobileMenu {
         position: absolute;
         top: 20%;
         right: 5%;
@@ -199,18 +203,19 @@
         cursor: pointer;
     }
 
-    #mobile-menu.is-active .bar:nth-child(2) {
+    #mobileMenu.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    #mobile-menu.is-active .bar:nth-child(1) {
+    #mobileMenu.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    #mobile-menu.is-active .bar:nth-child(3) {
+    #mobileMenu.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
 
 /* HERO SECTION */ 
 
@@ -707,7 +712,7 @@
     }
 
     .citadel_container p {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .accenture_container h1 {
@@ -723,7 +728,7 @@
     }
 
     .accenture_container p {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .internship_container h1 {
@@ -739,7 +744,7 @@
     }
 
     .internship_container p {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
 }   
@@ -1277,15 +1282,15 @@
     }
 
     .item h2 {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     .item p {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 }
 
-/* PERSONAL INFORMATION SECTION */
+/* ABOUT ME SECTION */
 
 .about {
     background-color: #141414;
@@ -1494,11 +1499,11 @@
     }
 
     .greeting span {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .greeting p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         padding-left: 5px;
     }
 
@@ -1511,7 +1516,8 @@
     }
 
     .details h4 {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        font-weight: bold;
     }
 
     .details p {
@@ -1523,7 +1529,7 @@
     }
 
     .statement p {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -1644,14 +1650,14 @@ ul.contact_information {
 
     @media screen and (max-width: 768px) {
     .footer_container p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
 } 
 
 @media screen and (max-width: 480px) {
     .footer_container p {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 }
 

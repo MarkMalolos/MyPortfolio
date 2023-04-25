@@ -307,12 +307,12 @@
     }
 
     .main_img_container #main_img {
-    height: 80%;
-    width: 80%;
-    margin: 35px;
-    padding: 0px 20px;
-    align-items: center;
-    justify-content: center;
+        height: 80%;
+        width: 80%;
+        margin: 35px;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -445,7 +445,6 @@
     background-color: #141414;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     justify-self: center;
     margin: 0 auto;
     height: 100%;
@@ -708,7 +707,7 @@
     }
 
     .citadel_container p {
-        font: 0.8rem;
+        font-size: 0.8rem;
     }
 
     .accenture_container h1 {
@@ -1290,32 +1289,30 @@
 
 .about {
     background-color: #141414;
-    width: 100%;
-}
-
-.about_container {
-    padding: 20px 50px;
-}
-
-.about_container p {
-    color: #c0c0c0;
 }
 
 .about h1 {
-    font-size: 3rem;
+    color: #c0c0c0;
     display: grid;
     align-items: center;
     justify-content: center;
-    color: #C0C0C0;
-    padding-top: 90px;
-    padding-bottom: 30px;
+    font-size: 3rem;
+    padding: 80px;
+}
+
+.about_container {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    padding-bottom: 20px;
 }
 
 .greeting h2 {
+    color: #F7C04A;
     display: grid;
     justify-content: center;
     align-items: center;
-    color: #F7C04A;
+    font-size: 2rem;
 }
 
 .greeting p {
@@ -1323,61 +1320,348 @@
     align-items: center;
     justify-content: center;
     color: #c0c0c0;
+    padding-bottom: 50px;
+    font-size: 1.3rem;
 }
 
 .greeting span {
     color: #F7C04A;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.row {
-    padding-top: 50px;
+.personal_container {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    display: grid;
-    
+    height: auto;
+    padding: 0 50px;
 }
 
-#details {
-    width: 50%;
+.details {
     display: grid;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
-.column h3 {
+.details h3 {
     color: #c0c0c0;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
 }
 
 #head_info span {
-    color: #F7C04A;
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: italic;
 }
 
-.column li {
-    list-style-type: none;
+.details h4 {
+    background-color: #f9f54b;
+    background-image: linear-gradient(to top, #fbffb1 0%, #f7c04a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.details h5 {
     display: grid;
-    align-items: left;
-    justify-content: left;
-    color: #C0C0C0;
-    font-size: 1rem;
-}
-
-.column #info span {
-    color: #F7C04A;
-    font-weight: bold;
+    align-items: center;
+    justify-items: center;
+    color: #c0c0c0;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
-#bio {
+.details p {
+    color: #F7C04A;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.statement {
+    display: grid;
+    justify-content: center;
     width: 50%;
+}
+
+.statement h4 {
+    color: #c0c0c0;
+    font-size: 2rem;
     display: grid;
     align-items: center;
     justify-content: center;
 }
 
-#bio h4 {
-    color: #c0c0c0;
-    font-size: 2rem;
-    align-items: start;
+.statement p {
+    color: #f7c04a;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
+
+/* ABOUT ME RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+    .personal_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about h1 {
+        font-size: 2.3rem;
+    }
+
+    .greeting h2 {
+        font-size: 1.7rem;
+    }
+
+    .greeting span {
+        font-size: 1.3rem;
+    }
+
+    .greeting p {
+        padding-left: 15px;
+        font-size: 1.1rem;
+    }
+
+    .details h3, .details h4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .details h3 {
+        font-size: 1.5rem;
+    }
+
+    .details h4 {
+        font-size: 1.2rem;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .details p {
+        font-size: 1.3rem;
+    }
+
+    .statement {
+        width: 100%;
+        padding-top: 50px;
+    }
+    
+    .statement h4 {
+        font-size: 1.5rem;
+    }
+
+    .statement p {
+
+        font-size: 1rem;
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .greeting h2 {
+        font-size: 1.5rem;
+    }
+
+    .greeting span {
+        font-size: 1.1rem;
+    }
+
+    .greeting p {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+
+    .greeting span {
+        padding-right: 5px;
+    }
+
+    .details h3 {
+        font-size: 1.3rem;
+    }
+
+    .details h4 {
+        font-size: 1rem;
+    }
+
+    .details p {
+        font-size: 1.1rem;
+    }
+
+    .statement h4 {
+        font-size: 1.3rem;
+    }
+
+    .statement p {
+        font-size: 0.8rem;
+    }
+}
+
+* FOOTER SECTION */
+
+footer {
+    background-color: #F7C04A;
+    width: 100%;
+}
+
+.footer_container {
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F7C04A;
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    color: #131313;
+    height: 100%
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #141414;
+}
+
+.footer_container p {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact_information{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_information li{
+    margin: 0 10px;
+}
+
+.contact_information a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.contact_information a i{
+    font-size: 1.5rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+ul.contact_information {
+    padding-left: 0;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: small;
+    background-color: #F7C04A;
+}
+
+.copyright p {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: small;
+    background-color: #F7C04A;
+    font-size: 1rem;
+}
+
+#whatsapp {
+    color: green;
+}
+
+#whatsapp:hover {
+    color: aqua;
+    transition: all 0.3s ease ;
+    transform: scale(1.2);
+}
+
+#linkedin {
+    color: blue;
+}
+
+#linkedin:hover {
+    color: aqua;
+    transition: all 0.3s ease ;
+    transform: scale(1.2);
+}
+
+#gmail {
+    color: #fff;
+}
+
+#gmail:hover {
+    color: aqua;
+    transition: all 0.3s ease ;
+    transform: scale(1.2);
+}
+
+
+
+/* FOOTER SECTION RESPONSIVENESS */
+
+    @media screen and (max-width: 768px) {
+    .footer_container p {
+        font-size: 0.8rem;
+    }
+
+} 
+
+@media screen and (max-width: 480px) {
+    .footer_container p {
+        font-size: 0.6rem;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

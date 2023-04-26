@@ -1650,13 +1650,21 @@ ul.contact_information {
 
     @media screen and (max-width: 768px) {
     .footer_container p {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .copyright p {
+        font-size: 0.8rem;
     }
 
 } 
 
 @media screen and (max-width: 480px) {
     .footer_container p {
+        font-size: 0.8rem;
+    }
+
+    .copyright p {
         font-size: 0.8rem;
     }
 }

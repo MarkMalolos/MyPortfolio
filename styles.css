@@ -1665,10 +1665,12 @@ ul.contact_information {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 
     .copyright p {
         font-size: 0.7rem;
+        width: 100%;
     }
 }
 

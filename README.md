@@ -1,5 +1,7 @@
 # MyPortfolio
 
-This project is my Portfolio Website.
-I developed this project alongside with my CV to be used 
-for my future applications for Software Engineer Position.
+I am Mark Malolos.
+This is my Portfolio website.
+I developed this Portfolio to be used in my current 
+job application for Software Engineer/Developer.
+I can also work as an IT Support Engineer or Technical Support Engineer.

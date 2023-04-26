@@ -1533,7 +1533,7 @@ html {
     }
 }
 
-* FOOTER SECTION */
+/* FOOTER SECTION */
 
 footer {
     background-color: #F7C04A;
@@ -1648,7 +1648,7 @@ ul.contact_information {
 
 /* FOOTER SECTION RESPONSIVENESS */
 
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer_container p {
         font-size: 0.8rem;
     }
@@ -1661,11 +1661,14 @@ ul.contact_information {
 
 @media screen and (max-width: 480px) {
     .footer_container p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .copyright p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 

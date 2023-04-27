@@ -286,14 +286,14 @@ html {
 
 @media screen and (max-width: 768px) {
     .main_content h1 {
-        font-size: 2.5rem;
-        padding-left: 40px;
+        font-size: 2.19rem;
+        padding-left: 3px;
         align-items: center;
         justify-content: center;
     }
 
     .main_content h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
         padding-left: 40px;
     }    
 
@@ -308,14 +308,14 @@ html {
         font-size: 1.8rem;
         color: #c0c0c0;
         font-weight: 500;
-        padding-left: 100px;
+        padding-left: 175px;
     }
 
     .main_img_container #main_img {
         height: 80%;
         width: 80%;
         margin: 35px;
-        padding: 0px 20px;
+        padding-left: 10px;
         align-items: center;
         justify-content: center;
     }
@@ -1291,11 +1291,11 @@ html {
     }
 
     .item h2 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .item p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: justify;
     }
 }
@@ -1468,7 +1468,7 @@ html {
     }
 
     .greeting h2 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     .greeting span {
@@ -1476,7 +1476,7 @@ html {
     }
 
     .greeting p {
-        padding-left: 15px;
+        padding-left: 28px;
         font-size: 1.1rem;
     }
 
@@ -1486,7 +1486,7 @@ html {
     }
 
     .details h3 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .details h4 {
@@ -1507,12 +1507,13 @@ html {
     }
     
     .statement h4 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        padding: 20px 0;
     }
 
     .statement p {
-
-        font-size: 1rem;
+        
+        font-size: 1.1rem;
     }
    
 }

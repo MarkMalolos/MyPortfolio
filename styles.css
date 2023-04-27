@@ -423,7 +423,7 @@ html {
 
 @media screen and (max-width: 480px) {
     .highlights h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .highlights p {
@@ -708,7 +708,7 @@ html {
 
 @media screen and (max-width: 480px) {
     .experience h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .citadel_container h1 {
@@ -850,7 +850,7 @@ html {
 
 @media screen and (max-width: 480px) {
     .skills_container h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .row.row-cols-1.row-cols-md-3.g-4 {
@@ -1005,7 +1005,7 @@ html {
 
 @media screen and (max-width: 480px) {
     .education h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .logo_container p {
@@ -1302,9 +1302,8 @@ html {
 
 @media screen and (max-width: 480px) {
     .trainings h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         display: grid;
-        
     }
 
     .item h2 {
@@ -1520,7 +1519,7 @@ html {
 
 @media screen and (max-width: 480px) {
     .about h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .greeting h2 {

@@ -321,20 +321,23 @@ html {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .main_content h1 {
         font-size: 2rem;
         margin-top: 0.5rem;
+        padding-top: 20px;
+        padding-left: 20px;
     }
 
     .main_content h2 {
         font-size: 1.8rem;
+        padding-left: 50px;
     }
 
     .main_content p {
         margin-top: 1rem;
         font-size: 1.5rem;
-        padding-left: 135px;
+        padding-left: 180px;
     }
 }
 
@@ -369,6 +372,7 @@ html {
     z-index: 1;
     width: 100%;
     max-width: 1300px;
+    text-align: justify;
 }
 
 .highlights span {
@@ -408,6 +412,7 @@ html {
         font-size: 1.5rem;
         height: 100%;
         width: 100%;
+        text-align: justify;
     }
 
     .highlights span {
@@ -416,13 +421,14 @@ html {
     
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .highlights h1 {
         font-size: 2rem;
     }
 
     .highlights p {
         font-size: 1.2rem;
+        text-align: justify;
     }
 
     .highlights span {
@@ -508,6 +514,7 @@ html {
     color: #fff;
     list-style-type: none;
     padding: 20px 0;
+    text-align: justify;
 }
 
 .accenture_container {
@@ -563,6 +570,7 @@ html {
     color: #fff;
     list-style-type: none;
     padding: 20px 0;
+    text-align: justify;
 }
 
 .internship_container {
@@ -614,6 +622,7 @@ html {
     color: #fff;
     list-style-type: none;
     padding: 20px 0;
+    text-align: justify;
 }
 
 /* WORK EXPERIENCE RESPONSIVE SECTION */
@@ -652,6 +661,7 @@ html {
 
     .citadel_container p {
         font-size: 1rem;
+        text-align: justify;
     }   
     
     .accenture_container {
@@ -671,6 +681,7 @@ html {
 
     .accenture_container p {
         font: 1rem;
+        text-align: justify;
     }
 
     .internship_container {
@@ -690,11 +701,12 @@ html {
 
     .internship_container p {
         font: 1rem;
+        text-align: justify;
     }
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .experience h1 {
         font-size: 2rem;
     }
@@ -713,6 +725,7 @@ html {
 
     .citadel_container p {
         font-size: 1.1rem;
+        text-align: justify;
     }
 
     .accenture_container h1 {
@@ -729,6 +742,7 @@ html {
 
     .accenture_container p {
         font-size: 1.1rem;
+        text-align: justify;
     }
 
     .internship_container h1 {
@@ -745,6 +759,7 @@ html {
 
     .internship_container p {
         font-size: 1.1rem;
+        text-align: justify;
     }
 
 }   
@@ -833,7 +848,7 @@ html {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .skills_container h1 {
         font-size: 2rem;
     }
@@ -988,9 +1003,9 @@ html {
     }  
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .education h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .logo_container p {
@@ -1066,6 +1081,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 #sql {
@@ -1089,6 +1105,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 #azdev {
@@ -1112,6 +1129,7 @@ html {
     padding: 5px;
     font-style: italic;
     display: block;
+    text-align: justify;
 
 }
 
@@ -1136,6 +1154,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 #comptech {
@@ -1159,6 +1178,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 #iot {
@@ -1182,6 +1202,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 #netsec {
@@ -1205,6 +1226,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 #cysec {
@@ -1228,6 +1250,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 #ai {
@@ -1251,6 +1274,7 @@ html {
     padding-top: 8px;
     font-style: italic;
     display: block;
+    text-align: justify;
 }
 
 
@@ -1272,13 +1296,15 @@ html {
 
     .item p {
         font-size: 0.8rem;
+        text-align: justify;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .trainings h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         display: grid;
+        
     }
 
     .item h2 {
@@ -1287,6 +1313,7 @@ html {
 
     .item p {
         font-size: 1rem;
+        text-align: justify;
     }
 }
 
@@ -1425,6 +1452,7 @@ html {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    text-align: justify;
 }
 
 /* ABOUT ME RESPONSIVENESS */
@@ -1489,34 +1517,31 @@ html {
    
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .about h1 {
         font-size: 2rem;
     }
 
     .greeting h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .greeting span {
         font-size: 1.3rem;
+        padding-right: 5px;
     }
 
     .greeting p {
         font-size: 1.1rem;
-        padding-left: 5px;
-    }
-
-    .greeting span {
-        padding-right: 5px;
+        padding-left: 30px;
     }
 
     .details h3 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .details h4 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: bold;
     }
 
@@ -1525,12 +1550,13 @@ html {
     }
 
     .statement h4 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .statement p {
         font-size: 1.1rem;
     }
+
 }
 
 /* FOOTER SECTION */
@@ -1659,7 +1685,7 @@ ul.contact_information {
 
 } 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px) {
     .footer_container p {
         font-size: 0.7rem;
         display: flex;

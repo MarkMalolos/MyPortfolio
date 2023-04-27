@@ -321,7 +321,7 @@ html {
     }
 }
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .main_content h1 {
         font-size: 2rem;
         margin-top: 0.5rem;
@@ -421,7 +421,7 @@ html {
     
 }
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .highlights h1 {
         font-size: 2rem;
     }
@@ -706,7 +706,7 @@ html {
 
 }
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .experience h1 {
         font-size: 2rem;
     }
@@ -848,7 +848,7 @@ html {
     }
 }
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .skills_container h1 {
         font-size: 2rem;
     }
@@ -1003,7 +1003,7 @@ html {
     }  
 }
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .education h1 {
         font-size: 2rem;
     }
@@ -1300,7 +1300,7 @@ html {
     }
 }
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .trainings h1 {
         font-size: 2rem;
         display: grid;
@@ -1518,7 +1518,7 @@ html {
    
 }
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .about h1 {
         font-size: 2rem;
     }
@@ -1686,7 +1686,7 @@ ul.contact_information {
 
 } 
 
-@media screen and (max-width: 480px) and (min-width: 400px) {
+@media screen and (max-width: 480px) {
     .footer_container p {
         font-size: 0.7rem;
         display: flex;

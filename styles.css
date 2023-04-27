@@ -341,6 +341,26 @@ html {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .main_content h1 {
+        font-size: 1.7rem;
+        margin-top: 0.5rem;
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+
+    .main_content h2 {
+        font-size: 1.6rem;
+        padding-left: 30px;
+    }
+
+    .main_content p {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        padding-left: 140px;
+    }
+}
+
 /* CAREER HIGHLIGHTS SECTION CSS */
 
 .highlights {
@@ -1315,6 +1335,12 @@ html {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .trainings h1 {
+        font-size: 1.6rem;
+    }
+}
+
 /* ABOUT ME SECTION */
 
 .about {
@@ -1556,6 +1582,21 @@ html {
         font-size: 1.1rem;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .greeting span {
+        font-size: 1.2rem;
+        padding-right: 15px;
+    }
+
+    #bscpe {
+        font-size: 1rem;
+    }
+
+    #total_we {
+        font-size: 0.9rem;
+    }
 }
 
 /* FOOTER SECTION */

@@ -359,6 +359,10 @@ html {
         font-size: 1.3rem;
         padding-left: 140px;
     }
+
+    .main_img_container #main_img {
+        padding: 0;
+    }
 }
 
 /* CAREER HIGHLIGHTS SECTION CSS */
